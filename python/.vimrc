@@ -45,7 +45,9 @@ let g:ctrlp_cmd = 'CtrlP'
 
 
 colorscheme wombat
-"set cursorline
+hi comment ctermfg=6
+"set corsorline
+set colorcolumn=80
 
 map <C-n> :NERDTreeToggle<CR>
 nmap <F12> :TagbarToggle<CR>
