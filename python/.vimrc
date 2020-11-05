@@ -17,14 +17,19 @@ set tags=./tags,tags;$HOME
 
 call vundle#begin()
 
+"use PluginInstall to install
 Plugin 'VundleVim/vundle'
 Plugin 'scrooloose/nerdtree'
-Plugin 'flazz/vim-colorschemes'
 Plugin 'rkulla/pydiction'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'majutsushi/tagbar'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'jstemmer/gotags'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'KeitaNakamura/neodark.vim'
+Plugin 'crusoexia/vim-monokai'
 
 call vundle#end()
 filetype plugin indent on
