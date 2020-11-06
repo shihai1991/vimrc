@@ -28,7 +28,6 @@ Plugin 'majutsushi/tagbar'
 Plugin 'jstemmer/gotags'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'tomasr/molokai'
-Plugin 'jstemmer/gotags'
 
 
 call vundle#end()
