@@ -55,6 +55,9 @@ colorscheme earth
 "colorscheme molokai
 "hi comment ctermfg=6
 set colorcolumn=80
+set backspace=indent,eol,start
+set hlsearch
+
 
 map <C-n> :NERDTreeToggle<CR>
 nmap <F12> :TagbarToggle<CR>
