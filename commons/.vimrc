@@ -54,6 +54,9 @@ let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_custom_ignore = {
             \ 'dir': 'build\'}
 let g:auto_ctags = 1
+let g:auto_ctags_directory_list = ['.git']
+let g:auto_ctags_search_recursively = 1
+set tags+=.git/tags;
 "let g:tagbar_autofocus = 1
 
 
