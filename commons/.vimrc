@@ -15,7 +15,6 @@ set pastetoggle=<F9>
 set tags=./tags,tags,.git/tags;
 "set mouse=a
 
-
 call vundle#begin()
 
 " Brief help
