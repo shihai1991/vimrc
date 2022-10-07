@@ -12,7 +12,7 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set pastetoggle=<F9>
-set tags=./tags,tags;
+set tags=./tags,tags,.git/tags;
 "set mouse=a
 
 call vundle#begin()
@@ -56,7 +56,6 @@ let g:ctrlp_custom_ignore = {
 let g:auto_ctags = 1
 let g:auto_ctags_directory_list = ['.git']
 let g:auto_ctags_search_recursively = 1
-set tags+=.git/tags;
 "let g:tagbar_autofocus = 1
 
 
