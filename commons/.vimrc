@@ -66,6 +66,7 @@ let g:ctrlp_custom_ignore = {
 let g:auto_ctags = 1
 let g:auto_ctags_directory_list = ['.git']
 let g:auto_ctags_search_recursively = 1
+let g:auto_ctags_warn_once = 1
 "let g:tagbar_autofocus = 1
 
 
