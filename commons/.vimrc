@@ -15,24 +15,34 @@ set pastetoggle=<F9>
 set tags=./tags,tags,.git/tags;
 "set mouse=a
 
+
 call vundle#begin()
 
-"use PluginInstall to install
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'rkulla/pydiction'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'majutsushi/tagbar'
-Plugin 'jstemmer/gotags'
-Plugin 'flazz/vim-colorschemes'
-Plugin 'tomasr/molokai'
-Plugin 'fatih/vim-go'
-Plugin 'soramugi/auto-ctags.vim'
-
+" Brief help
+" " :PluginList       - lists configured plugins
+" " :PluginInstall    - installs plugins; append `!` to update or just
+" :PluginUpdate. Or you can use :BundleInstall to install if your meet some problems.
+" " :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" " :PluginClean      - confirms removal of unused plugins; append `!` to
+" auto-approve removal
+" I can't use group/repo to clone from github by https protocol in China.
+" So I clone those plugins by the full url.
+Plugin 'git@github.com:VundleVim/Vundle.vim.git'
+Plugin 'git@github.com:scrooloose/nerdtree.git'
+Plugin 'git@github.com:rkulla/pydiction.git'
+Plugin 'git@github.com:vim-airline/vim-airline.git'
+Plugin 'git@github.com:vim-airline/vim-airline-themes.git'
+Plugin 'git@github.com:ctrlpvim/ctrlp.vim.git'
+Plugin 'git@github.com:majutsushi/tagbar.git'
+Plugin 'git@github.com:jstemmer/gotags.git'
+Plugin 'git@github.com:flazz/vim-colorschemes.git'
+Plugin 'git@github.com:tomasr/molokai.git'
+Plugin 'git@github.com:fatih/vim-go.git'
+Plugin 'git@github.com:soramugi/auto-ctags.vim.git'
 
 call vundle#end()
+
+
 filetype plugin indent on
 syntax on
 
