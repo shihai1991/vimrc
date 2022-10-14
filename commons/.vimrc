@@ -12,7 +12,7 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set pastetoggle=<F9>
-set tags=./tags,tags,.git/tags;
+set tags=.git/tags;
 "set mouse=a
 
 call vundle#begin()
