@@ -17,31 +17,22 @@ set tags=.git/tags;
 
 call vundle#begin()
 
-" Brief help
-" " :PluginList       - lists configured plugins
-" " :PluginInstall    - installs plugins; append `!` to update or just
-" :PluginUpdate. Or you can use :BundleInstall to install if your meet some problems.
-" " :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" " :PluginClean      - confirms removal of unused plugins; append `!` to
-" auto-approve removal
-" I can't use group/repo to clone from github by https protocol in China.
-" So I clone those plugins by the full url.
-Plugin 'git@github.com:VundleVim/Vundle.vim.git'
-Plugin 'git@github.com:scrooloose/nerdtree.git'
-Plugin 'git@github.com:rkulla/pydiction.git'
-Plugin 'git@github.com:vim-airline/vim-airline.git'
-Plugin 'git@github.com:vim-airline/vim-airline-themes.git'
-Plugin 'git@github.com:ctrlpvim/ctrlp.vim.git'
-Plugin 'git@github.com:majutsushi/tagbar.git'
-Plugin 'git@github.com:jstemmer/gotags.git'
-Plugin 'git@github.com:flazz/vim-colorschemes.git'
-Plugin 'git@github.com:tomasr/molokai.git'
-Plugin 'git@github.com:fatih/vim-go.git'
-Plugin 'git@github.com:soramugi/auto-ctags.vim.git'
+"use PluginInstall to install
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'rkulla/pydiction'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'majutsushi/tagbar'
+Plugin 'jstemmer/gotags'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'tomasr/molokai'
+Plugin 'fatih/vim-go'
+Plugin 'soramugi/auto-ctags.vim'
+
 
 call vundle#end()
-
-
 filetype plugin indent on
 syntax on
 
@@ -65,15 +56,18 @@ let g:ctrlp_custom_ignore = {
 let g:auto_ctags = 1
 let g:auto_ctags_directory_list = ['.git']
 let g:auto_ctags_search_recursively = 1
+let g:tagbar_autofocus = 1
 let g:auto_ctags_warn_once = 1
-"let g:tagbar_autofocus = 1
 
 
 colorscheme earth
 "colorscheme wombat
 "colorscheme molokai
 "hi comment ctermfg=6
-set colorcolumn=80
+"set colorcolumn=80
+set cursorline cursorcolumn
+hi cursorcolumn term=reverse ctermbg=6
+hi cursorline cterm=underline
 set backspace=indent,eol,start
 set hlsearch
 
