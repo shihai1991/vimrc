@@ -1,6 +1,8 @@
 set nocompatible
 filetype off
 
+""ZSH_THEME="ys"
+"这个主题需要在~/.zshrc中配置
 set rtp+=~/.vim/bundle/Vundle.vim/
 set number
 set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
