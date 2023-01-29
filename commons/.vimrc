@@ -65,7 +65,9 @@ colorscheme earth
 "colorscheme molokai
 "hi comment ctermfg=6
 "set colorcolumn=80
-set cursorline cursorcolumn
+"set cursorline cursorcolumn
+au WinLeave * set nocursorline nocursorcolumn
+au WinEnter * set cursorline cursorcolumn
 hi cursorcolumn term=reverse ctermbg=6
 hi cursorline cterm=underline
 set backspace=indent,eol,start
