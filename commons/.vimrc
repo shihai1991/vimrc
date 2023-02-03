@@ -32,6 +32,8 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'tomasr/molokai'
 Plugin 'fatih/vim-go'
 Plugin 'soramugi/auto-ctags.vim'
+Plugin 'Shougo/unite.vim'
+Plugin 'Quramy/vison'
 
 
 call vundle#end()
