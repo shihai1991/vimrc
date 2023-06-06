@@ -34,6 +34,7 @@ Plugin 'fatih/vim-go'
 Plugin 'soramugi/auto-ctags.vim'
 Plugin 'Shougo/unite.vim'
 Plugin 'Quramy/vison'
+Plugin 'nvie/vim-flake8'
 
 
 call vundle#end()
@@ -80,3 +81,4 @@ set hlsearch
 
 map <C-n> :NERDTreeToggle<CR>
 map <C-m> :TagbarToggle<CR>
+map <C-k> :call flake8#Flake8()<CR>
