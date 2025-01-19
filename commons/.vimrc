@@ -6,6 +6,9 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim/
 set number
 set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
+set termencoding=utf-8
+set fileformats=unix
+set encoding=prc
 au BufNewFile,BufRead *.py,*.pyw setf python
 set autoindent " same level indent
 set smartindent " next level indent
