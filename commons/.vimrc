@@ -5,11 +5,12 @@ filetype off
 "这个主题需要在~/.zshrc中配置
 set rtp+=~/.vim/bundle/Vundle.vim/
 set number
-set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
-set termencoding=utf-8
+set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,euc-cn,latin1
 set encoding=utf-8
+set termencoding=utf-8
+set fileencoding=utf-8
 set fileformats=unix
-set encoding=prc
+"set encoding=prc
 au BufNewFile,BufRead *.py,*.pyw setf python
 set autoindent " same level indent
 set smartindent " next level indent
@@ -25,7 +26,7 @@ call vundle#begin()
 
 "use PluginInstall to install
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'scrooloose/nerdtree'
+Plugin 'preservim/nerdtree'
 Plugin 'rkulla/pydiction'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
